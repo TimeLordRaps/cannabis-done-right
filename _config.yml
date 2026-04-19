@@ -2,9 +2,6 @@ title: Cannabis Done Right
 description: Freedom-enhanced knowledge base for cannabis strains, effects, risks, and responsible use. Not an endorsement — information only.
 baseurl: "/cannabis-done-right"
 url: "https://timelordraps.github.io"
-theme: minima
-plugins:
-  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
