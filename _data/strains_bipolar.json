@@ -1,0 +1,18 @@
+[ 
+  {
+    "id": "strains-97743",
+    "name": "Crypt",
+    "slug": "crypt",
+    "effects": {"logtags-relaxed": 133.33333333333334, "logtags-focused": 126.66666666666666, "logtags-euphoric": 123.33333333333331, "logtags-happy": 28.333333333333332, "logtags-creative": 18.333333333333332},
+    "symptoms": {"logtags-stress": 118.33333333333331, "logtags-pain": 113.33333333333331, "logtags-depression": 110.0, "logtags-cramps": 100.0, "logtags-headaches": 18.333333333333332},
+    "bipolar_score": 391.82
+  },
+  {
+    "id": "strains-121423",
+    "name": "Soul Assassin OG",
+    "slug": "soul-assassin-og",
+    "effects": {"logtags-euphoric": 137.66233766233765, "logtags-relaxed": 134.25324675324674, "logtags-happy": 123.37662337662336, "logtags-focused": 117.69480519480518, "logtags-sleepy": 115.42207792207792},
+    "symptoms": {"logtags-stress": 128.24675324675326, "logtags-pain": 125.97402597402598, "logtags-insomnia": 123.37662337662336, "logtags-depression": 118.83116883116882, "logtags-fatigue": 116.55844155844154},
+    "bipolar_score": 391.61
+  }
+]
