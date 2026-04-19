@@ -31,9 +31,8 @@ jobs:
           working-directory: ./
       - name: Install dependencies
         run: bundle lock --add-platform x86_64-linux
-      - name: Build Jekyll
-        run: bundle exec jekyll build --baseurl ${{ steps.pages.outputs.base_path }}
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl ${{ steps.pages.outputs.base_path }}
