@@ -4,35 +4,86 @@ title: Strain Finder
 nav: finder
 ---
 
-<div class="finder-hero">
-  <h1>🔍 MaxSAT Strain Finder</h1>
-  <p>Select conditions/symptoms for optimal rankings (pysat RC2, 48 DSM clauses). Harm thresholds: <span class="low">Low</span> <span class="mod">Mod</span> <span class="high">High</span>.</p>
-</div>
+<section class="finder-hero panel reveal" data-reveal>
+  <p class="eyebrow">Decision support / threshold ranking</p>
+  <h1>Strain Finder</h1>
+  <p class="finder-hero__lede">Select the conditions you want relief for. The ranking weighs fit first, then subtracts visible risk so the result stays conservative.</p>
+  <p class="subtle">This is a filtering tool, not a directive. The more conditions you stack, the narrower and stricter the answer becomes.</p>
 
-<form id="condition-form" class="max-w-4xl mx-auto p-12">
-  <label class="block text-2xl font-bold mb-8 text-center">DSM Conditions (Multi-Select)</label>
-  <select multiple id="conditions" class="w-full h-64 p-6 border-4 border-indigo-300 rounded-3xl bg-gradient-to-b from-indigo-50 to-purple-50 text-xl shadow-inner focus:border-emerald-400 focus:outline-none">
-    <option value="bp1">Bipolar I</option>
-    <option value="bp2">Bipolar II</option>
-    <option value="cyclo">Cyclothymia</option>
-    <option value="mdd">Major Depressive Disorder</option>
-    <option value="pdd">Persistent Depressive (Dysthymia)</option>
-    <option value="pmdd">PMDD</option>
-    <option value="sad_seasonal">Seasonal Affective Disorder</option>
-    <option value="sza_bp">Schizoaffective Bipolar</option>
-    <option value="sza_dep">Schizoaffective Depressive</option>
-    <option value="gad">Generalized Anxiety</option>
-    <option value="social_anx">Social Anxiety</option>
-    <option value="panic">Panic Disorder</option>
-    <option value="ptsd">PTSD</option>
-    <option value="gaming_add">Gaming Addiction Proxy</option>
-    <option value="porn_add">Porn Addiction Proxy</option>
-  </select>
-  <button type="submit" class="w-full mt-12 bg-gradient-to-r from-emerald-500 to-teal-600 text-white py-8 px-12 rounded-3xl text-2xl font-bold shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300">Find Optimal Strains</button>
-</form>
+  <div class="finder-legend" aria-label="Risk legend">
+    <span class="tag tag--low">Low risk</span>
+    <span class="tag tag--mod">Moderate risk</span>
+    <span class="tag tag--high">High risk</span>
+  </div>
+</section>
 
-<div id="results" class="results-grid"></div>
+<section class="finder-shell panel reveal" data-reveal>
+  <div class="section-head">
+    <p class="eyebrow">Choose conditions</p>
+    <h2>Pick the drivers that actually matter</h2>
+    <p>Group the conditions by what you are trying to stabilize. The ranking uses the bundled strain dataset and a conservative fit model.</p>
+  </div>
 
+  <form id="condition-form" class="finder-form">
+    <fieldset class="finder-group">
+      <legend class="finder-group__title">Mood stability</legend>
+      <div class="finder-group__grid">
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="bp1"><span>Bipolar I</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="bp2"><span>Bipolar II</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="cyclo"><span>Cyclothymia</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="sza_bp"><span>Schizoaffective · Bipolar</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="sza_dep"><span>Schizoaffective · Depressive</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="finder-group">
+      <legend class="finder-group__title">Depressive / seasonal</legend>
+      <div class="finder-group__grid">
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="mdd"><span>Major Depressive Disorder</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="pdd"><span>Persistent Depressive Disorder</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="pmdd"><span>PMDD</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="sad_seasonal"><span>Seasonal Affective Disorder</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="finder-group">
+      <legend class="finder-group__title">Anxiety / trauma</legend>
+      <div class="finder-group__grid">
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="gad"><span>Generalized Anxiety</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="social_anx"><span>Social Anxiety</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="panic"><span>Panic Disorder</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="ptsd"><span>PTSD</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="finder-group">
+      <legend class="finder-group__title">Compulsion proxies</legend>
+      <div class="finder-group__grid">
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="gaming_add"><span>Gaming Addiction Proxy</span></label>
+        <label class="toggle-chip"><input type="checkbox" name="conditions" value="porn_add"><span>Porn Addiction Proxy</span></label>
+      </div>
+    </fieldset>
+
+    <div class="finder-actions">
+      <p class="finder-note">More boxes mean a stricter filter. If you are trying to regain sleep, focus, or calm, the output should stay visibly cautious.</p>
+      <button type="submit" class="button button--primary">Run threshold ranking</button>
+    </div>
+  </form>
+</section>
+
+<section class="section reveal" data-reveal>
+  <div class="section-head">
+    <p class="eyebrow">Ranked output</p>
+    <h2>Conservative matches</h2>
+    <p>Results are sorted by fit and filtered through the selected risk lens. Higher scores mean closer alignment, not moral permission.</p>
+  </div>
+
+  <div id="results" class="results-wrap" aria-live="polite">
+    <p class="finder-empty">Select one or more conditions and run the ranking.</p>
+  </div>
+</section>
+
+<script>window.__STRAIN_DATA__ = {{ site.data.strains_bipolar | jsonify }};</script>
 <script src="{{ '/js/strains.js' | relative_url }}"></script>
 <script src="{{ '/js/ranker.js' | relative_url }}"></script>
 

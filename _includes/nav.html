@@ -1,6 +1,21 @@
-<nav>
-  <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/finder' | relative_url }}">Strain Finder</a>
-  <a href="{{ '/breeder' | relative_url }}">Strain Breeder</a>
-  <a href="{{ '/myths' | relative_url }}">Myths & Risks</a>
+<nav class="site-nav" aria-label="Primary">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <span class="brand__glyph" aria-hidden="true">◈</span>
+    <span class="brand__text">
+      <span class="brand__title">Cannabis Done Right</span>
+      <span class="brand__subtitle">Harm-aware strain intelligence</span>
+    </span>
+  </a>
+
+  <div class="nav-links">
+    <a class="nav-link{% if page.nav == 'home' %} is-active{% endif %}" href="{{ '/' | relative_url }}" {% if page.nav == 'home' %}aria-current="page"{% endif %}>Home</a>
+    <a class="nav-link{% if page.nav == 'finder' %} is-active{% endif %}" href="{{ '/finder' | relative_url }}" {% if page.nav == 'finder' %}aria-current="page"{% endif %}>Strain Finder</a>
+    <a class="nav-link{% if page.nav == 'breeder' %} is-active{% endif %}" href="{{ '/breeder' | relative_url }}" {% if page.nav == 'breeder' %}aria-current="page"{% endif %}>Strain Breeder</a>
+    <a class="nav-link{% if page.nav == 'myths' %} is-active{% endif %}" href="{{ '/myths' | relative_url }}" {% if page.nav == 'myths' %}aria-current="page"{% endif %}>Myths &amp; Risks</a>
+  </div>
+
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+    <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+    <span data-theme-label>Paper</span>
+  </button>
 </nav>

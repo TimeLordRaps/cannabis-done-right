@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html class="dark">
+<html lang="en" data-theme="dark">
 <head>
+  <meta charset="utf-8">
   <title>{{ page.title }} | Cannabis Done Right</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
   <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
 </head>
-<body class="antialiased">
-  <button class="dark-mode-toggle" onclick="toggleDark()">🌙</button>
-  {% include nav.html %}
-  <main class="container mx-auto px-6 py-12">{{ content }}</main>
-  <script>
-    function toggleDark() {
-      document.documentElement.classList.toggle('dark');
-      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-    }
-    if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
-  </script>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="site-frame">
+    <header class="site-header">
+      {% include nav.html %}
+    </header>
+
+    <main id="content" class="site-main" tabindex="-1">
+      <div class="page-shell">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-panel">
+        <p><strong>Cannabis Done Right</strong> is an educational harm-reduction project. Clarity over compulsion. Thresholds over self-deception.</p>
+        <p>GitHub Pages project by <strong>TimeLordRaps</strong> · no endorsement, no glamorization, no shortcuts around consequences.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="{{ '/js/site.js' | relative_url }}"></script>
 </body>
 </html>
