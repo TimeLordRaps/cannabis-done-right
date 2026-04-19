@@ -3,8 +3,6 @@
   const storageKey = 'cannabis-done-right-theme';
   const button = document.querySelector('[data-theme-toggle]');
   const label = button?.querySelector('[data-theme-label]');
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
   let savedTheme = null;
   try {
     savedTheme = localStorage.getItem(storageKey);
@@ -12,7 +10,7 @@
     savedTheme = null;
   }
 
-  const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+  const initialTheme = savedTheme || 'dark';
   root.dataset.theme = initialTheme === 'light' ? 'light' : 'dark';
 
   const syncButton = () => {
