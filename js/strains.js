@@ -1,5 +1,5 @@
 // Load strains data
-fetch('/data/strains_bipolar.json')
+fetch('/data/strains_optimal.jsonl').then(r => r.json()).then(data => data = data.map(JSON.parse)) // Optimal MaxSAT data
   .then(r => r.json())
   .then(data => window.strains = data);
 
