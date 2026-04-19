@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html class="dark">
 <head>
-  <title>{{ page.title }}</title>
+  <title>{{ page.title }} | Cannabis Done Right</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
 </head>
-<body>
+<body class="antialiased">
+  <button class="dark-mode-toggle" onclick="toggleDark()">🌙</button>
   {% include nav.html %}
-  <main>{{ content }}</main>
+  <main class="container mx-auto px-6 py-12">{{ content }}</main>
+  <script>
+    function toggleDark() {
+      document.documentElement.classList.toggle('dark');
+      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+    }
+    if (localStorage.theme === 'dark' || (!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
 </body>
 </html>

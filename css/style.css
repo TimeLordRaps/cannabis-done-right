@@ -1,9 +1,44 @@
-/* Modern UI */
+/* Beautiful Modern UI */
 @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-.hero { @apply bg-gradient-to-r from-green-500 to-blue-500 text-white p-20 text-center; }
-.disclaimer { @apply bg-yellow-200 p-4 rounded mt-4 text-black font-bold; }
-.finder-hero { @apply bg-indigo-600 text-white p-12 text-center; }
-.low { @apply bg-green-200 px-2 py-1 rounded text-green-800; }
-.mod { @apply bg-yellow-200 px-2 py-1 rounded text-yellow-800; }
-.high { @apply bg-red-200 px-2 py-1 rounded text-red-800; }
+* { font-family: 'Inter', sans-serif; }
+
+body { @apply bg-gradient-to-br from-slate-50 to-indigo-50 dark:from-slate-900 dark:to-indigo-900 min-h-screen; }
+
+.hero { @apply relative bg-gradient-to-r from-emerald-500 via-teal-500 to-indigo-600 text-white py-32 px-8 text-center overflow-hidden; }
+.hero::before { content: ''; @apply absolute inset-0 bg-black/20; }
+.hero h1 { @apply text-6xl md:text-7xl font-bold mb-6 drop-shadow-2xl; }
+.hero p { @apply text-xl md:text-2xl max-w-3xl mx-auto mb-8 opacity-90; }
+
+.disclaimer { @apply bg-amber-100 border-2 border-amber-300 p-6 rounded-2xl mt-8 text-amber-900 font-semibold shadow-lg backdrop-blur-sm; }
+
+.finder-hero { @apply bg-gradient-to-r from-purple-600 to-pink-600 text-white py-24 px-8 text-center rounded-3xl mx-8 -mt-12 shadow-2xl; }
+
+.strain-card { @apply bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl border border-slate-200 dark:border-slate-700 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group; }
+.strain-name { @apply text-2xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-emerald-600; }
+.rating { @apply flex items-center gap-2 text-emerald-600 font-semibold; }
+.harm-badge { @apply inline-flex items-center px-4 py-2 rounded-full font-medium text-sm uppercase tracking-wide; }
+.low { @apply bg-emerald-100 text-emerald-800 border-emerald-200; }
+.mod { @apply bg-amber-100 text-amber-800 border-amber-200; }
+.high { @apply bg-red-100 text-red-800 border-red-200; }
+
+.results-grid { @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12; }
+
+.quitting-step { @apply bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 mb-8; }
+.step-number { @apply text-4xl font-black opacity-90 mb-4 block; }
+
+.dark-mode-toggle { @apply fixed top-6 right-6 p-3 bg-slate-200 dark:bg-slate-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer z-50; }
+
+nav { @apply bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-b border-slate-200 dark:border-slate-700 shadow-lg px-8 py-4 sticky top-0 z-40; }
+nav a { @apply text-slate-700 dark:text-slate-300 hover:text-emerald-600 font-medium px-4 py-2 rounded-lg transition-colors; }
+
+form { @apply max-w-2xl mx-auto p-12 bg-white/70 dark:bg-slate-800/70 backdrop-blur-xl rounded-3xl shadow-2xl border border-slate-200 dark:border-slate-700; }
+select[multiple] { @apply h-64 p-4 border-2 border-slate-300 dark:border-slate-600 rounded-xl bg-white dark:bg-slate-900 text-slate-900 dark:text-white; }
+
+table { @apply w-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl overflow-hidden shadow-xl; }
+th { @apply bg-gradient-to-r from-slate-50 to-slate-100 dark:from-slate-700 dark:to-slate-600 px-6 py-4 text-left font-semibold text-slate-900 dark:text-white uppercase tracking-wide text-xs; }
+td { @apply px-6 py-4 border-t border-slate-200 dark:border-slate-700; }
+tr:nth-child(even) { @apply bg-slate-50/50 dark:bg-slate-700/50; }
+tr:hover { @apply bg-emerald-50 dark:bg-emerald-900/50; }
+
