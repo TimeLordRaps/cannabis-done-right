@@ -8,12 +8,54 @@ nav: finder
   <p class="eyebrow">Decision support / threshold ranking</p>
   <h1>Strain Finder</h1>
   <p class="finder-hero__lede">Select the conditions you want relief for. The ranking weighs fit first, then subtracts visible risk so the result stays conservative.</p>
-  <p class="subtle">This is a filtering tool, not a directive. The more conditions you stack, the narrower and stricter the answer becomes.</p>
+  <p class="subtle">This is a filtering tool, not a directive. The more conditions you stack, the narrower and stricter the answer becomes. Risk labels are driven by negative tags and activation balance, not a generic vibe check.</p>
 
   <div class="finder-legend" aria-label="Risk legend">
     <span class="tag tag--low">Low risk</span>
     <span class="tag tag--mod">Moderate risk</span>
     <span class="tag tag--high">High risk</span>
+  </div>
+</section>
+
+{% include autonomy-cue.html eyebrow="Autonomy cue" title="Treat the result as a checkpoint, not a command" text="Risk bands stay visible, reasons stay explicit, and nothing on the page is trying to force a yes. The design is here to help you read more slowly, not to talk you into a faster answer." points="Fewer conditions usually means a cleaner, less biased read.|If you are altered or anxious, rerun later instead of deciding now.|A high-risk label is an invitation to slow down." %}
+
+<section class="panel panel--soft reveal" data-reveal>
+  <div class="section-head">
+    <p class="eyebrow">Risk rubric</p>
+    <h2>What moves a strain into each band</h2>
+    <p>The band is conservative by design. A strain is only called low, moderate, or high after the negative tags and the activation/anchor balance are checked together.</p>
+  </div>
+
+  <div class="grid grid--risks">
+    <article class="risk-card">
+      <span class="risk-card__label">Low risk</span>
+      <h3>Few caution tags, stable anchor</h3>
+      <p>Low risk means no major paranoia or anxiety signal, a modest negative load, and a relaxed/focused profile that stays anchored instead of spiking.</p>
+      <ul class="risk-card__list">
+        <li>Negative load stays below the moderate threshold.</li>
+        <li>Relaxation and focus hold the activation in place.</li>
+      </ul>
+    </article>
+
+    <article class="risk-card">
+      <span class="risk-card__label">Moderate risk</span>
+      <h3>Visible caution, but not a hard stop</h3>
+      <p>Moderate risk usually means a few negative tags, some dryness or nervousness, or a profile that looks a little more activated than it is anchored.</p>
+      <ul class="risk-card__list">
+        <li>One or two caution signals need attention.</li>
+        <li>The profile may still fit, but it deserves a measured read.</li>
+      </ul>
+    </article>
+
+    <article class="risk-card">
+      <span class="risk-card__label">High risk</span>
+      <h3>Paranoia, anxiety, or unanchored activation</h3>
+      <p>High risk is reserved for strains with strong paranoia/anxiety signals, stacked negatives, or activation that outruns the relaxation/focus anchor.</p>
+      <ul class="risk-card__list">
+        <li>Paranoia/anxiety crosses the caution line.</li>
+        <li>Negative load or activation gap is meaningfully higher than the low/mod bands.</li>
+      </ul>
+    </article>
   </div>
 </section>
 
@@ -24,7 +66,17 @@ nav: finder
     <p>Group the conditions by what you are trying to stabilize. The ranking uses the bundled strain dataset and a conservative fit model.</p>
   </div>
 
-  <form id="condition-form" class="finder-form">
+  <div id="gate-prompt" class="gate-prompt panel panel--warning">
+    <p class="warning-band__label">Before you rank</p>
+    <h3>Did you actually read the risk rubric above?</h3>
+    <p>The form unlocks once you confirm. This is a deliberate pause — not a legal checkbox. If you skipped the risk bands and autonomy cue, scroll back up first.</p>
+    <label class="gate-check">
+      <input type="checkbox" id="gate-checkbox">
+      <span>I read the risk rubric and autonomy cue. I understand this tool filters — it does not prescribe.</span>
+    </label>
+  </div>
+
+  <form id="condition-form" class="finder-form" data-gated>
     <fieldset class="finder-group">
       <legend class="finder-group__title">Mood stability</legend>
       <div class="finder-group__grid">
@@ -83,7 +135,24 @@ nav: finder
   </div>
 </section>
 
-<script>window.__STRAIN_DATA__ = {{ site.data.strains_bipolar | jsonify }};</script>
+<script>window.__STRAIN_DATA__ = {{ site.data.strains_all | jsonify }};</script>
 <script src="{{ '/js/strains.js' | relative_url }}"></script>
 <script src="{{ '/js/ranker.js' | relative_url }}"></script>
+<script>
+(() => {
+  const gate = document.getElementById('gate-checkbox');
+  const form = document.getElementById('condition-form');
+  const prompt = document.getElementById('gate-prompt');
+  if (!gate || !form) return;
+  gate.addEventListener('change', () => {
+    if (gate.checked) {
+      form.removeAttribute('data-gated');
+      prompt.hidden = true;
+    } else {
+      form.setAttribute('data-gated', '');
+      prompt.hidden = false;
+    }
+  });
+})();
+</script>
 

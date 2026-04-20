@@ -8,12 +8,14 @@
     id: strain.id || strain.slug || strain.name || '',
     name: strain.name || 'Unnamed strain',
     slug: strain.slug || '',
+    category: strain.category || '',
     effects: normalizeMap(strain.effects),
     symptoms: normalizeMap(strain.symptoms),
-    bipolar_score: Number.isFinite(Number(strain.bipolar_score)) ? Number(strain.bipolar_score) : 0
+    negatives: normalizeMap(strain.negatives),
+    conditions: normalizeMap(strain.conditions)
   });
 
-  const profile = (label, summary, fitEffects, fitSymptoms, avoidEffects, avoidSymptoms, riskBias = 1, note = '') => ({
+  const profile = (label, summary, fitEffects, fitSymptoms, avoidEffects, avoidSymptoms, riskBias = 1, note = '', conditionTags = []) => ({
     label,
     summary,
     fitEffects,
@@ -21,7 +23,8 @@
     avoidEffects,
     avoidSymptoms,
     riskBias,
-    note
+    note,
+    conditionTags
   });
 
   window.strains = rawStrains.map(normalizeStrain);
@@ -51,7 +54,8 @@
         'logtags-headaches': 0.2
       },
       0.9,
-      'Conservative default for general clarity.'
+      'Conservative default for general clarity.',
+      ['logtags-anxiety']
     ),
     bp1: profile(
       'Bipolar I',
@@ -76,7 +80,8 @@
         'logtags-depression': 0.2
       },
       1.25,
-      'Keep activation low; if the product pushes the edges, it loses points.'
+      'Keep activation low; if the product pushes the edges, it loses points.',
+      ['logtags-bipolar-disorder']
     ),
     bp2: profile(
       'Bipolar II',
@@ -99,7 +104,8 @@
       },
       {},
       1.15,
-      'Prefer steadiness over bright spikes.'
+      'Prefer steadiness over bright spikes.',
+      ['logtags-bipolar-disorder']
     ),
     cyclo: profile(
       'Cyclothymia',
@@ -120,7 +126,8 @@
       },
       {},
       1.12,
-      'Keep the profile quiet and precise.'
+      'Keep the profile quiet and precise.',
+      ['logtags-bipolar-disorder']
     ),
     mdd: profile(
       'Major depressive disorder',
@@ -142,7 +149,8 @@
       },
       {},
       1,
-      'Aim for lift, not overcorrection.'
+      'Aim for lift, not overcorrection.',
+      []
     ),
     pdd: profile(
       'Persistent depressive disorder',
@@ -164,7 +172,8 @@
       },
       {},
       1.02,
-      'Prefer durable clarity over a loud spike.'
+      'Prefer durable clarity over a loud spike.',
+      []
     ),
     pmdd: profile(
       'PMDD',
@@ -185,7 +194,8 @@
       },
       {},
       1.05,
-      'Keep the relief clean and the edges soft.'
+      'Keep the relief clean and the edges soft.',
+      ['logtags-pms']
     ),
     sad_seasonal: profile(
       'Seasonal affective disorder',
@@ -207,7 +217,8 @@
       },
       {},
       1,
-      'Seasonal support should still feel grounded.'
+      'Seasonal support should still feel grounded.',
+      []
     ),
     sza_bp: profile(
       'Schizoaffective · bipolar',
@@ -229,7 +240,8 @@
       },
       {},
       1.35,
-      'Keep activation low; the safest answer is usually the quieter one.'
+      'Keep activation low; the safest answer is usually the quieter one.',
+      ['logtags-bipolar-disorder']
     ),
     sza_dep: profile(
       'Schizoaffective · depressive',
@@ -250,7 +262,8 @@
       },
       {},
       1.25,
-      'Favor stability and visible caution.'
+      'Favor stability and visible caution.',
+      []
     ),
     gad: profile(
       'Generalized anxiety',
@@ -271,7 +284,8 @@
       },
       {},
       1.15,
-      'Lower volatility is usually the safer default.'
+      'Lower volatility is usually the safer default.',
+      ['logtags-anxiety']
     ),
     social_anx: profile(
       'Social anxiety',
@@ -290,7 +304,8 @@
       },
       {},
       1.1,
-      'Prefer social ease over theatrical uplift.'
+      'Prefer social ease over theatrical uplift.',
+      ['logtags-anxiety']
     ),
     panic: profile(
       'Panic disorder',
@@ -311,7 +326,8 @@
       },
       {},
       1.3,
-      'The safest answer is the one least likely to intensify the spike.'
+      'The safest answer is the one least likely to intensify the spike.',
+      ['logtags-anxiety']
     ),
     ptsd: profile(
       'PTSD',
@@ -333,7 +349,8 @@
       },
       {},
       1.18,
-      'Use a low-volatility lens; reactivity is the cost to watch.'
+      'Use a low-volatility lens; reactivity is the cost to watch.',
+      ['logtags-ptsd']
     ),
     gaming_add: profile(
       'Gaming addiction proxy',
@@ -354,7 +371,8 @@
       },
       {},
       1.35,
-      'If this is another ritual loop, treat it as a warning sign.'
+      'If this is another ritual loop, treat it as a warning sign.',
+      []
     ),
     porn_add: profile(
       'Porn addiction proxy',
@@ -375,7 +393,8 @@
       },
       {},
       1.35,
-      'Treat escapist reinforcement as part of the problem, not a solution.'
+      'Treat escapist reinforcement as part of the problem, not a solution.',
+      []
     )
   };
 })();

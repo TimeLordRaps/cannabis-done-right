@@ -36,6 +36,8 @@ nav: home
   </aside>
 </section>
 
+{% include autonomy-cue.html eyebrow="Autonomy cue" title="You are free to stop, reread, or leave" text="The layout is meant to slow impulse, not to sneak a decision past you. Compare the options, then walk away if the answer still feels noisy." points="Use the tools as a checkpoint, not a command.|If you feel rushed, wait and come back with a clear head.|The safest move is often to pause, not to optimize." %}
+
 <section id="reset" class="section reveal" data-reveal>
   <div class="section-head">
     <p class="eyebrow">Quit-first reset</p>

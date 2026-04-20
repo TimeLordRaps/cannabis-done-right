@@ -1,0 +1,17 @@
+<section class="section autonomy-cue panel panel--soft reveal" data-reveal>
+  <div class="section-head">
+    <p class="eyebrow">{{ include.eyebrow | default: 'Autonomy cue' | escape }}</p>
+    <h2>{{ include.title | escape }}</h2>
+    <p>{{ include.text | escape }}</p>
+  </div>
+
+  {%- assign autonomy_points = include.points | default: '' | split: '|' -%}
+  <ul class="warning-list">
+    {%- for point in autonomy_points -%}
+      {%- assign point_text = point | strip -%}
+      {%- if point_text != '' -%}
+      <li>{{ point_text | escape }}</li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+</section>

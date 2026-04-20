@@ -1,0 +1,478 @@
+[
+  {
+    "id": "strains-75",
+    "name": "Blue Dream",
+    "slug": "blue-dream",
+    "category": "Hybrid",
+    "rating_count": 11637,
+    "parents": [
+      {
+        "name": "Blueberry",
+        "category": "Indica"
+      },
+      {
+        "name": "Haze",
+        "category": "Sativa"
+      }
+    ],
+    "parent_names": "blueberry haze",
+    "effects": {
+      "logtags-happy": 62.40601011690875,
+      "logtags-relaxed": 56.06548399056997,
+      "logtags-euphoric": 49.7098309215876,
+      "logtags-uplifted": 48.65018464038613,
+      "logtags-creative": 38.389473219810775
+    },
+    "negatives": {
+      "logtags-dry-mouth": 9.457284344157644,
+      "logtags-dry-eyes": 5.346363301981269,
+      "logtags-paranoid": 2.2462220769166636,
+      "logtags-anxious": 1.7203480960526507,
+      "logtags-dizzy": 1.7105394224186603
+    },
+    "symptoms": {
+      "logtags-stress": 33.73489898098389,
+      "logtags-depression": 28.339133360799057,
+      "logtags-pain": 24.04049708407707,
+      "logtags-headaches": 14.238457260795832,
+      "logtags-fatigue": 12.308122484515096
+    },
+    "conditions": {
+      "logtags-anxiety": 27.688774692296995,
+      "logtags-addadhd": 10.215253717597026,
+      "logtags-ptsd": 9.132280877937811,
+      "logtags-migraines": 8.976560196879278,
+      "logtags-bipolar-disorder": 7.415708936985523
+    },
+    "abstract": "Blue Dream, a sativa-dominant hybrid originating in California, has achieved legendary status among West Coast strains.",
+    "bipolar_score": 0
+  },
+  {
+    "id": "strains-13",
+    "name": "Sour Diesel",
+    "slug": "sour-diesel",
+    "category": "Sativa",
+    "rating_count": 6689,
+    "parents": [
+      {
+        "name": "Chemdawg 91",
+        "category": "Hybrid"
+      },
+      {
+        "name": "Super Skunk",
+        "category": "Indica"
+      }
+    ],
+    "parent_names": "chemdawg 91 super skunk",
+    "effects": {
+      "logtags-happy": 59.87623461945357,
+      "logtags-uplifted": 50.47095250067949,
+      "logtags-euphoric": 44.202000721630306,
+      "logtags-energetic": 42.5963777525519,
+      "logtags-relaxed": 41.4374682583952
+    },
+    "negatives": {
+      "logtags-dry-mouth": 9.368888874249157,
+      "logtags-dry-eyes": 5.2953452307718685,
+      "logtags-paranoid": 3.103342507875931,
+      "logtags-dizzy": 2.390406337143628,
+      "logtags-anxious": 1.6400143372552547
+    },
+    "symptoms": {
+      "logtags-stress": 29.24466984144706,
+      "logtags-depression": 24.308904930972673,
+      "logtags-pain": 18.56540315641628,
+      "logtags-fatigue": 13.378764089658128,
+      "logtags-lack-of-appetite": 10.954812590725195
+    },
+    "conditions": {
+      "logtags-anxiety": 22.596153717342236,
+      "logtags-addadhd": 11.3124485275888,
+      "logtags-ptsd": 8.478244798159327,
+      "logtags-migraines": 6.004162236133332,
+      "logtags-bipolar-disorder": 5.6488824252187335
+    },
+    "abstract": "Sour Diesel, sometimes called Sour D, is an invigorating sativa named after its pungent, diesel-like aroma.",
+    "bipolar_score": 0
+  },
+  {
+    "id": "strains-10771",
+    "name": "Girl Scout Cookies",
+    "slug": "girl-scout-cookie",
+    "category": "Hybrid",
+    "rating_count": 5838,
+    "parents": [
+      {
+        "name": "Durban Poison",
+        "category": "Sativa"
+      },
+      {
+        "name": "OG Kush",
+        "category": "Hybrid"
+      }
+    ],
+    "parent_names": "durban poison og kush",
+    "effects": {
+      "logtags-happy": 59.87849689473221,
+      "logtags-relaxed": 55.83737352923191,
+      "logtags-euphoric": 51.853510502863486,
+      "logtags-uplifted": 46.79504338996911,
+      "logtags-creative": 32.160534485750155
+    },
+    "negatives": {
+      "logtags-dry-mouth": 8.199395892602219,
+      "logtags-dry-eyes": 4.331179427782591,
+      "logtags-paranoid": 1.2260902500238713,
+      "logtags-dizzy": 1.1935880660419362,
+      "logtags-anxious": 1.13347705382812
+    },
+    "symptoms": {
+      "logtags-stress": 33.64331545720834,
+      "logtags-depression": 26.801254766747217,
+      "logtags-pain": 26.217142617214503,
+      "logtags-insomnia": 14.65742858401018,
+      "logtags-lack-of-appetite": 14.440863379726308
+    },
+    "conditions": {
+      "logtags-anxiety": 26.93938241955256,
+      "logtags-ptsd": 11.372583636242874,
+      "logtags-migraines": 10.056805535927271,
+      "logtags-addadhd": 9.55239549925627,
+      "logtags-bipolar-disorder": 6.924466264269763
+    },
+    "abstract": "Girl Scout Cookies is an OG Kush and Durban Poison hybrid with intensely euphoric effects and a sweet, earthy aroma.",
+    "bipolar_score": 0
+  },
+  {
+    "id": "strains-32",
+    "name": "Green Crack",
+    "slug": "green-crack",
+    "category": "Sativa",
+    "rating_count": 5216,
+    "parents": [
+      {
+        "name": "Skunk #1",
+        "category": "Hybrid"
+      }
+    ],
+    "parent_names": "skunk #1",
+    "effects": {
+      "logtags-energetic": 61.012734659347245,
+      "logtags-happy": 55.78692912591433,
+      "logtags-uplifted": 51.580726734943006,
+      "logtags-focused": 45.268146574129766,
+      "logtags-euphoric": 41.120334571913816
+    },
+    "negatives": {
+      "logtags-dry-mouth": 9.081385156661256,
+      "logtags-dry-eyes": 5.393802445776524,
+      "logtags-paranoid": 3.1822905589773054,
+      "logtags-anxious": 3.1238487064639924,
+      "logtags-headache": 1.9268337692773312
+    },
+    "symptoms": {
+      "logtags-stress": 29.468302079218777,
+      "logtags-depression": 26.242839952769376,
+      "logtags-fatigue": 21.000685165435986,
+      "logtags-pain": 15.654206445470043,
+      "logtags-lack-of-appetite": 11.762168104928111
+    },
+    "conditions": {
+      "logtags-anxiety": 24.15440504326652,
+      "logtags-addadhd": 12.81230053665868,
+      "logtags-ptsd": 8.77898747021819,
+      "logtags-bipolar-disorder": 6.722773813492096,
+      "logtags-migraines": 6.709759823238583
+    },
+    "abstract": "Green Crack is a popular sativa strain that promotes energy, focus, and mental stimulation.",
+    "bipolar_score": 0
+  },
+  {
+    "id": "strains-23",
+    "name": "OG Kush",
+    "slug": "og-kush",
+    "category": "Hybrid",
+    "rating_count": 4632,
+    "parents": [
+      {
+        "name": "Chemdawg",
+        "category": "Hybrid"
+      },
+      {
+        "name": "Hindu Kush",
+        "category": "Indica"
+      }
+    ],
+    "parent_names": "chemdawg hindu kush",
+    "effects": {
+      "logtags-relaxed": 61.0193726461336,
+      "logtags-happy": 57.77843105504728,
+      "logtags-euphoric": 48.75145691272717,
+      "logtags-uplifted": 40.660886206758875,
+      "logtags-hungry": 28.890633660657763
+    },
+    "negatives": {
+      "logtags-dry-mouth": 10.189392140101171,
+      "logtags-dry-eyes": 6.6737963309545005,
+      "logtags-dizzy": 4.180552121860543,
+      "logtags-paranoid": 3.3521851642635583,
+      "logtags-headache": 1.9511230379794453
+    },
+    "symptoms": {
+      "logtags-stress": 33.56178963604457,
+      "logtags-pain": 26.636439346534697,
+      "logtags-depression": 25.818646225041128,
+      "logtags-insomnia": 18.527695985121277,
+      "logtags-headaches": 16.409546169200134
+    },
+    "conditions": {
+      "logtags-anxiety": 26.421948904638025,
+      "logtags-addadhd": 11.999436079432222,
+      "logtags-migraines": 10.040981994554468,
+      "logtags-ptsd": 9.771865164959257,
+      "logtags-bipolar-disorder": 7.449598331729509
+    },
+    "abstract": "OG Kush makes up the genetic backbone of West Coast cannabis strains, but in spite of its ubiquity, its origins remain a debatable mystery.",
+    "bipolar_score": 0
+  },
+  {
+    "id": "strains-11",
+    "name": "Granddaddy Purple",
+    "slug": "granddaddy-purple",
+    "category": "Indica",
+    "rating_count": 3765,
+    "parents": [
+      {
+        "name": "Purple Urkle",
+        "category": "Indica"
+      },
+      {
+        "name": "Big Bud",
+        "category": "Indica"
+      }
+    ],
+    "parent_names": "purple urkle big bud",
+    "effects": {
+      "logtags-relaxed": 73.86621927157363,
+      "logtags-sleepy": 58.24607329842931,
+      "logtags-happy": 53.8286464799122,
+      "logtags-euphoric": 46.52766532927918,
+      "logtags-hungry": 38.84975681138038
+    },
+    "negatives": {
+      "logtags-dry-mouth": 11.26943859712252,
+      "logtags-dry-eyes": 6.375080213262326,
+      "logtags-dizzy": 2.228954139004336,
+      "logtags-paranoid": 1.954429871119027,
+      "logtags-headache": 1.8626718962715072
+    },
+    "symptoms": {
+      "logtags-stress": 41.187636062683296,
+      "logtags-pain": 34.1122266002171,
+      "logtags-insomnia": 33.266913753500894,
+      "logtags-depression": 25.88894286416821,
+      "logtags-lack-of-appetite": 19.2391134860234
+    },
+    "conditions": {
+      "logtags-anxiety": 29.07138530553007,
+      "logtags-ptsd": 13.045525149481538,
+      "logtags-addadhd": 10.696326082654146,
+      "logtags-migraines": 10.182586375440048,
+      "logtags-arthritis": 7.04452360818745
+    },
+    "abstract": "Introduced in 2003 by Ken Estes, Granddaddy Purple is a famous indica cross between Purple Urkle and Big Bud.",
+    "bipolar_score": 0
+  },
+  {
+    "id": "strains-26",
+    "name": "White Widow",
+    "slug": "white-widow",
+    "category": "Hybrid",
+    "rating_count": 3507,
+    "parents": [
+      {
+        "name": "South American",
+        "category": "Sativa"
+      },
+      {
+        "name": "South Indian Indica",
+        "category": "Indica"
+      }
+    ],
+    "parent_names": "south american south indian indica",
+    "effects": {
+      "logtags-happy": 60.06435966794143,
+      "logtags-euphoric": 50.29747459953344,
+      "logtags-relaxed": 49.64794002161659,
+      "logtags-uplifted": 48.654666051458975,
+      "logtags-creative": 34.86508153572161
+    },
+    "negatives": {
+      "logtags-dry-mouth": 10.522867063570484,
+      "logtags-dry-eyes": 5.751696921529928,
+      "logtags-paranoid": 3.543263547310729,
+      "logtags-dizzy": 3.280287102944678,
+      "logtags-headache": 1.6111466569462043
+    },
+    "symptoms": {
+      "logtags-stress": 29.10699878546921,
+      "logtags-depression": 22.378055514589388,
+      "logtags-pain": 21.427556998367653,
+      "logtags-fatigue": 13.406901543206182,
+      "logtags-insomnia": 10.899730707363124
+    },
+    "conditions": {
+      "logtags-anxiety": 19.533627100275165,
+      "logtags-addadhd": 8.547760164458897,
+      "logtags-ptsd": 7.727688388722728,
+      "logtags-migraines": 5.902449907285972,
+      "logtags-bipolar-disorder": 5.455225459841776
+    },
+    "abstract": "Among the most famous strains worldwide is White Widow, a balanced hybrid first bred in the Netherlands.",
+    "bipolar_score": 0
+  },
+  {
+    "id": "strains-31",
+    "name": "Jack Herer",
+    "slug": "jack-herer",
+    "category": "Sativa",
+    "rating_count": 3445,
+    "parents": [
+      {
+        "name": "Haze",
+        "category": "Sativa"
+      },
+      {
+        "name": "Shiva Skunk",
+        "category": "Indica"
+      },
+      {
+        "name": "Northern Lights #5",
+        "category": "Indica"
+      }
+    ],
+    "parent_names": "haze shiva skunk northern lights #5",
+    "effects": {
+      "logtags-happy": 63.07635478802819,
+      "logtags-uplifted": 59.35817078449816,
+      "logtags-energetic": 52.5091895054929,
+      "logtags-euphoric": 48.959548158332666,
+      "logtags-creative": 47.411202211200425
+    },
+    "negatives": {
+      "logtags-dry-mouth": 9.637539655933196,
+      "logtags-dry-eyes": 6.422136275524983,
+      "logtags-anxious": 3.169127469501606,
+      "logtags-paranoid": 2.992302575874593,
+      "logtags-dizzy": 1.565891503505624
+    },
+    "symptoms": {
+      "logtags-stress": 34.04299998093632,
+      "logtags-depression": 33.848805637454454,
+      "logtags-pain": 20.727151951911175,
+      "logtags-fatigue": 20.682459256042375,
+      "logtags-headaches": 12.466962882093023
+    },
+    "conditions": {
+      "logtags-anxiety": 24.98072825101932,
+      "logtags-addadhd": 13.106643946794676,
+      "logtags-ptsd": 9.381168087220503,
+      "logtags-migraines": 7.407854443719611,
+      "logtags-arthritis": 6.02207689914897
+    },
+    "abstract": "Jack Herer is a sativa-dominant cannabis strain that provides the perfect pairing of cerebral elevation and full-body relief.",
+    "bipolar_score": 0
+  },
+  {
+    "id": "strains-33",
+    "name": "Bubba Kush",
+    "slug": "bubba-kush",
+    "category": "Indica",
+    "rating_count": 2846,
+    "parents": [
+      {
+        "name": "OG Kush",
+        "category": "Hybrid"
+      }
+    ],
+    "parent_names": "og kush",
+    "effects": {
+      "logtags-relaxed": 70.41945538861417,
+      "logtags-sleepy": 51.65607314498299,
+      "logtags-happy": 51.409285410249645,
+      "logtags-euphoric": 38.03672493284678,
+      "logtags-hungry": 36.03604773765179
+    },
+    "negatives": {
+      "logtags-dry-mouth": 12.14158305110282,
+      "logtags-dry-eyes": 6.539227341617714,
+      "logtags-dizzy": 2.9266777504371086,
+      "logtags-paranoid": 2.8461775215446057,
+      "logtags-anxious": 2.4436977781359985
+    },
+    "symptoms": {
+      "logtags-stress": 33.502147480523064,
+      "logtags-pain": 27.736998892676542,
+      "logtags-insomnia": 26.644998264209903,
+      "logtags-depression": 22.927901890720552,
+      "logtags-lack-of-appetite": 13.972033300303275
+    },
+    "conditions": {
+      "logtags-anxiety": 28.30917582368376,
+      "logtags-addadhd": 10.307523596472787,
+      "logtags-ptsd": 9.854025716033169,
+      "logtags-arthritis": 8.108736186772068,
+      "logtags-bipolar-disorder": 7.526862932110326
+    },
+    "abstract": "Bubba Kush is a sweet, earthy indica strain with genetics that trace back to the Hindu Kush landrace strains.",
+    "bipolar_score": 0
+  },
+  {
+    "id": "strains-65591",
+    "name": "Gorilla Glue #4",
+    "slug": "gorilla-glue-4",
+    "category": "Hybrid",
+    "rating_count": 2804,
+    "parents": [
+      {
+        "name": "Chem's Sister",
+        "category": "Sativa"
+      },
+      {
+        "name": "Chocolate Diesel",
+        "category": "Sativa"
+      }
+    ],
+    "parent_names": "chem's sister chocolate diesel",
+    "effects": {
+      "logtags-relaxed": 70.82392774547446,
+      "logtags-happy": 59.30260323792688,
+      "logtags-euphoric": 53.91908112747054,
+      "logtags-uplifted": 39.260571962464965,
+      "logtags-sleepy": 28.392266943365463
+    },
+    "negatives": {
+      "logtags-dry-mouth": 7.557568150969403,
+      "logtags-dry-eyes": 4.186069667770006,
+      "logtags-paranoid": 2.2974276257086146,
+      "logtags-anxious": 1.4674351291673493,
+      "logtags-dizzy": 1.3443182311634936
+    },
+    "symptoms": {
+      "logtags-stress": 33.10580215335725,
+      "logtags-depression": 26.86369490946122,
+      "logtags-pain": 26.05763894822707,
+      "logtags-insomnia": 17.750448071349627,
+      "logtags-lack-of-appetite": 15.567419008637616
+    },
+    "conditions": {
+      "logtags-anxiety": 24.30265985238684,
+      "logtags-ptsd": 12.615862075969368,
+      "logtags-addadhd": 10.995998933546996,
+      "logtags-bipolar-disorder": 9.464114661907784,
+      "logtags-migraines": 9.36640277324473
+    },
+    "abstract": "Gorilla Glue #4 is a potent hybrid strain that won 1st place in the 2014 Los Angeles Cannabis Cup.",
+    "bipolar_score": 0
+  }
+]

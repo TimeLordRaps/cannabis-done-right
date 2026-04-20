@@ -623,6 +623,24 @@ textarea:focus-visible {
 	color: var(--danger);
 }
 
+.tag--strong {
+	border-color: rgba(124, 173, 191, 0.34);
+	background: rgba(124, 173, 191, 0.12);
+	color: #7bb9cf;
+}
+
+.tag--limited {
+	border-color: rgba(138, 146, 153, 0.3);
+	background: rgba(138, 146, 153, 0.11);
+	color: var(--muted-strong);
+}
+
+.tag--elite {
+	border-color: rgba(199, 173, 109, 0.36);
+	background: rgba(199, 173, 109, 0.14);
+	color: #e0c77b;
+}
+
 .tag--neutral {
 	color: var(--accent-strong);
 }
@@ -988,6 +1006,48 @@ textarea:focus-visible {
 	gap: 0.45rem;
 }
 
+.strain-card__risk {
+	display: grid;
+	gap: 0.45rem;
+	padding: 0.9rem 0.95rem;
+	border-radius: 18px;
+	border: 1px solid var(--line);
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.strain-card__risk-title {
+	font-size: 0.76rem;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: var(--accent-strong);
+}
+
+.strain-card__risk-list {
+	display: grid;
+	gap: 0.45rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: var(--muted);
+}
+
+.strain-card__risk-list li {
+	position: relative;
+	padding-left: 0.85rem;
+	line-height: 1.6;
+}
+
+.strain-card__risk-list li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0.74rem;
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 999px;
+	background: var(--accent);
+}
+
 .strain-card__footer {
 	display: flex;
 	flex-wrap: wrap;
@@ -1026,8 +1086,25 @@ table.results-table {
 }
 
 .breeder-form {
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(4, minmax(0, 1fr));
 	align-items: end;
+}
+
+
+.breeder-reset,
+.autonomy-cue {
+	display: grid;
+	gap: 0.9rem;
+}
+
+.autonomy-cue {
+	border-color: rgba(124, 173, 191, 0.2);
+	background: linear-gradient(180deg, rgba(124, 173, 191, 0.06), rgba(255, 255, 255, 0.02));
+}
+
+.breeder-reset .warning-list,
+.autonomy-cue .warning-list {
+	max-width: 72ch;
 }
 
 .breeder-field {
@@ -1058,6 +1135,60 @@ table.results-table {
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.breeder-starting-lines,
+.strain-card__lineage {
+	display: grid;
+	gap: 0.45rem;
+	padding: 0.9rem 0.95rem;
+	border-radius: 18px;
+	border: 1px solid var(--line);
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.breeder-starting-lines {
+	border-color: rgba(184, 155, 97, 0.16);
+	background: rgba(184, 155, 97, 0.06);
+}
+
+.breeder-starting-lines__list {
+	display: grid;
+	gap: 0.45rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: var(--muted);
+}
+
+.breeder-starting-lines__list li {
+	position: relative;
+	padding-left: 0.85rem;
+	line-height: 1.55;
+}
+
+.breeder-starting-lines__list li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0.74rem;
+	width: 0.3rem;
+	height: 0.3rem;
+	border-radius: 999px;
+	background: var(--accent);
+}
+
+.strain-card__lineage-title {
+	font-size: 0.76rem;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: var(--accent-strong);
+}
+
+.strain-card__lineage-text {
+	margin: 0;
+	line-height: 1.6;
+	color: var(--text);
+}
+
 .breeder-card ul {
 	display: grid;
 	gap: 0.45rem;
@@ -1082,6 +1213,8 @@ table.results-table {
 }
 
 .breeder-callout {
+	display: grid;
+	gap: 0.85rem;
 	border: 1px solid rgba(184, 155, 97, 0.24);
 	background: rgba(184, 155, 97, 0.08);
 	border-radius: var(--radius-md);
@@ -1262,5 +1395,56 @@ table.results-table {
 		opacity: 1;
 		transform: none;
 	}
+}
+
+/* ---- Gate prompt (finder acknowledgment) ---- */
+.gate-prompt {
+	margin-bottom: 1.5rem;
+}
+
+.gate-prompt h3 {
+	font-family: var(--display-font);
+	font-size: 1.35rem;
+	margin: 0.25rem 0 0.5rem;
+}
+
+.gate-prompt p {
+	color: var(--muted);
+	line-height: 1.6;
+}
+
+.gate-check {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+	margin-top: 1rem;
+	cursor: pointer;
+	font-size: 0.95rem;
+	line-height: 1.5;
+	color: var(--text);
+}
+
+.gate-check input[type="checkbox"] {
+	flex-shrink: 0;
+	width: 1.15em;
+	height: 1.15em;
+	margin-top: 0.2em;
+	accent-color: var(--accent);
+	cursor: pointer;
+}
+
+.finder-form[data-gated] {
+	opacity: 0.3;
+	pointer-events: none;
+	filter: blur(2px);
+	user-select: none;
+	transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+.finder-form:not([data-gated]) {
+	opacity: 1;
+	pointer-events: auto;
+	filter: none;
+	transition: opacity 0.4s ease, filter 0.4s ease;
 }
 
