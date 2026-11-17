@@ -9,10 +9,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "_data" / "strains_all.json"
 DST = ROOT / "data" / "strains.min.json"
-KEEP = ("id", "name", "slug", "category", "effects", "symptoms", "negatives", "conditions")
+KEEP = ("id", "name", "slug", "category", "effects", "symptoms", "negatives", "conditions", "rating_count")
 
 rows = json.loads(SRC.read_text(encoding="utf-8"))
-out = [{k: r.get(k, {} if k in ("effects", "symptoms", "negatives", "conditions") else "") for k in KEEP} for r in rows]
+out = [{k: r.get(k, {} if k in ("effects", "symptoms", "negatives", "conditions", "rating_count") else "") for k in KEEP} for r in rows]
 DST.parent.mkdir(exist_ok=True)
 DST.write_text(json.dumps(out, separators=(",", ":"), ensure_ascii=False), encoding="utf-8")
 print(f"{len(out)} strains -> {DST} ({DST.stat().st_size:,} bytes)")
+

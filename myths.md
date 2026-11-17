@@ -51,6 +51,7 @@ nav: myths
 			<span class="risk-card__label">Dependence</span>
 			<h3>Ritual can outrun intention</h3>
 			<p>What begins as relief can harden into a pattern that feels necessary precisely because it is repetitive.</p>
+			<p class="evidence-note">Cited: in a US national survey, 30.6% of past-year adult marijuana users met DSM-IV criteria for marijuana use disorder in 2012-2013 (<a href="https://pubmed.ncbi.nlm.nih.gov/26502112/" rel="noopener">Hasin et al., JAMA Psychiatry 2015</a>). Self-reported survey, past-year users only, older diagnostic criteria.</p>
 			<ul class="risk-card__list">
 				<li>Track the trigger, not just the session count.</li>
 				<li>Notice whether the use is solving a problem or postponing one.</li>
@@ -61,6 +62,7 @@ nav: myths
 			<span class="risk-card__label">Mood stability</span>
 			<h3>Activation is a tradeoff, not a gift</h3>
 			<p>In vulnerable people, higher activation can sharpen anxiety, paranoia, or volatility faster than it produces clarity.</p>
+			<p class="evidence-note">Cited: a systematic review found an association between cannabis use and worse manic symptoms in people with bipolar disorder, and about 3x odds of new-onset manic symptoms in a meta-analysis of two studies (<a href="https://pubmed.ncbi.nlm.nih.gov/25285897/" rel="noopener">Gibbs et al., J Affect Disord 2015</a>). The authors call the findings tentative: six studies of variable quality, association not proven cause.</p>
 			<ul class="risk-card__list">
 				<li>Lower volatility is usually the safer default.</li>
 				<li>Stronger is not the same as better.</li>
@@ -76,6 +78,18 @@ nav: myths
 				<li>Use evidence instead of vibe to judge the outcome.</li>
 			</ul>
 		</article>
+	</div>
+</section>
+
+<section class="section reveal" data-reveal>
+	<div class="panel panel--soft evidence-panel">
+		<h3>Sources and limits</h3>
+		<p>Only the two cards marked "Cited" rest on a specific published finding, checked against the PubMed abstract. The rest of this page is interpretive harm-reduction guidance, not a cited result. Nothing here is medical advice.</p>
+		<ul>
+			<li><a href="https://pubmed.ncbi.nlm.nih.gov/26502112/" rel="noopener">Hasin DS et al. Prevalence of marijuana use disorders in the United States between 2001-2002 and 2012-2013. JAMA Psychiatry 2015;72(12):1235-42.</a></li>
+			<li><a href="https://pubmed.ncbi.nlm.nih.gov/25285897/" rel="noopener">Gibbs M et al. Cannabis use and mania symptoms: a systematic review and meta-analysis. J Affect Disord 2015;171:39-47.</a></li>
+			<li><a href="https://nida.nih.gov/research-topics/cannabis-marijuana" rel="noopener">NIDA: cannabis (marijuana) research topic page</a> (general background).</li>
+		</ul>
 	</div>
 </section>
 

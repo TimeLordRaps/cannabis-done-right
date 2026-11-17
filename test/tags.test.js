@@ -67,3 +67,14 @@ test('breeder renders for every goal and surfaces caution signals from real nega
   }
   assert.ok(sawCaution, 'no caution signal ever surfaced: negative keys likely dead again');
 });
+
+test('every breeder goal effect weight exists in the full dataset (no dead weights)', () => {
+  const full = JSON.parse(read('_data/strains_all.json'));
+  const present = new Set();
+  full.forEach(s => Object.keys(s.effects || {}).forEach(k => present.add(k)));
+  const src = read('js/breeder.js');
+  const block = src.slice(src.indexOf('const goalMap'), src.indexOf('const volatilityMap'));
+  const used = [...block.matchAll(/'(logtags-[\w-]+)':\s*[0-9.]+/g)].map(m => m[1]);
+  assert.ok(used.length > 10);
+  assert.deepStrictEqual([...new Set(used)].filter(k => !present.has(k)), []);
+});

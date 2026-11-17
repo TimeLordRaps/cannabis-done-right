@@ -23,7 +23,7 @@ nav: finder
   <div class="section-head">
     <p class="eyebrow">Risk rubric</p>
     <h2>What moves a strain into each band</h2>
-    <p>The band is conservative by design. A strain is only called low, moderate, or high after the negative tags and the activation/anchor balance are checked together.</p>
+    <p>Bands are relative to this dataset (cutoffs sit near the 62nd-90th percentiles of crowd-sourced tag percentages), not clinical thresholds. A strain is only called low, moderate, or high after the negative tags and the activation/anchor balance are checked together, and strains with fewer than 10 ratings are flagged as noisy.</p>
   </div>
 
   <div class="grid grid--risks">

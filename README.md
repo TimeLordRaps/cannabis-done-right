@@ -29,7 +29,13 @@ bundle exec jekyll serve
 
 GitHub Actions workflow `pages.yml`. In the repo settings, Pages → Source must be set to **GitHub Actions** (the workflow token cannot create the Pages site itself).
 
+## Pipeline status
+
+See [pipeline/README.md](pipeline/README.md). In short: the earlier claim of a validated, provably optimal MaxSAT ranking is not supported by any code in this repo; the finder uses weighted scoring in JS.
+
 ## Known limits
 
-- Risk thresholds in `js/risk.js` are heuristics over crowd-sourced tag percentages, not clinical cutoffs.
+- Risk bands in `js/risk.js` are relative to this dataset (cutoffs anchored to percentiles; see `node scripts/calibrate_risk.js`), not clinical cutoffs.
+- Strains with fewer than 10 ratings are flagged as noisy.
+- Only two claims on the Myths page are cited to published studies; the rest is interpretive guidance.
 - Example profiles are fictional and carry per-profile cautions. For mood disorders, talk to a prescriber before using cannabis.

@@ -25,9 +25,7 @@
       summary: 'Quiet the signal and preserve recovery.',
       effectWeights: {
         'logtags-sleepy': 1.45,
-        'logtags-sedating': 1.2,
         'logtags-relaxed': 1.0,
-        'logtags-calm': 0.9
       },
       symptomWeights: {
         insomnia: 1.25,
@@ -49,8 +47,6 @@
       summary: 'Prioritize predictability and reduce swings.',
       effectWeights: {
         'logtags-relaxed': 1.25,
-        'logtags-balanced': 1.0,
-        'logtags-clear-headed': 0.8,
         'logtags-focused': 0.7
       },
       symptomWeights: {
@@ -73,7 +69,6 @@
       summary: 'Keep the experience clean enough to work inside.',
       effectWeights: {
         'logtags-focused': 1.4,
-        'logtags-clear-headed': 1.2,
         'logtags-uplifted': 0.55,
         'logtags-creative': 0.35
       },
@@ -96,9 +91,7 @@
       title: 'Body-ease profile',
       summary: 'Lean toward relief without losing all shape.',
       effectWeights: {
-        'logtags-body-buzz': 1.15,
         'logtags-relaxed': 1.05,
-        'logtags-sedating': 0.95,
         'logtags-euphoric': 0.35
       },
       symptomWeights: {
@@ -144,7 +137,6 @@
       title: 'Balanced dossier',
       summary: 'A measured middle ground with the edges kept visible.',
       effectWeights: {
-        'logtags-balanced': 1.25,
         'logtags-relaxed': 0.85,
         'logtags-focused': 0.8,
         'logtags-uplifted': 0.45
@@ -352,8 +344,6 @@
       + Number(effects['logtags-euphoric'] || 0)
       + Number(effects['logtags-energetic'] || 0);
     const anchor = Number(effects['logtags-relaxed'] || 0)
-      + Number(effects['logtags-sedating'] || 0)
-      + Number(effects['logtags-balanced'] || 0)
       + Number(effects['logtags-focused'] || 0);
     const activationGap = Math.max(0, activation - anchor);
 
