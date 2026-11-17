@@ -72,4 +72,5 @@ nav: breeder
 </section>
 
 <script>window.__BREEDER_STRAIN_DATA__ = {{ site.data.breeder_strains | jsonify }};</script>
+<script src="{{ '/js/tags.js' | relative_url }}"></script>
 <script src="{{ '/js/breeder.js' | relative_url }}"></script>

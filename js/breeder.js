@@ -253,11 +253,6 @@
     .map(part => part.charAt(0).toUpperCase() + part.slice(1))
     .join(' ');
 
-  const titleCaseWords = value => String(value || '')
-    .replace(/_/g, ' ')
-    .split(/| /)
-    .join(' ');
-
   const normalizeLabel = value => String(value || '')
     .replace(/[_-]+/g, ' ')
     .replace(/\s+/g, ' ')
@@ -332,19 +327,19 @@
     });
 
     Object.entries(goal.symptomWeights || {}).forEach(([tag, weight]) => {
-      const value = Number(symptoms[tag] || 0);
+      const value = window.finderTags.symptomValue(strain, tag);
       if (value > 0) {
         fit += (value / 100) * weight;
       }
 
-      const conditionValue = Number(conditions[tag] || 0);
+      const conditionValue = window.finderTags.conditionValue(strain, tag);
       if (conditionValue > 0) {
         fit += (conditionValue / 100) * (weight * 0.35);
       }
     });
 
     Object.entries(goal.avoidNegatives || {}).forEach(([tag, weight]) => {
-      const value = Number(negatives[tag] || 0);
+      const value = window.finderTags.negativeValue(strain, tag);
       if (value > 0) {
         const penalty = (value / 100) * weight;
         risk += penalty;
@@ -389,12 +384,14 @@
     const bestSymptoms = topEntries(symptoms, 2).map(([tag]) => titleFromTag(tag));
     const supportSummary = `${ratingCount} ratings · ${symptomCount} symptom tags · ${conditionCount} condition tags`;
 
+    const paranoiaValue = window.finderTags.negativeValue(strain, 'paranoia');
+    const anxiousValue = window.finderTags.negativeValue(strain, 'anxious');
     let riskLabel = 'Low';
     let riskClass = 'tag--low';
     let riskMessage = 'Lower penalty than most.';
     const reasons = [];
 
-    if (negatives.paranoia >= 18 || negatives.anxious >= 18 || activationGap >= 24 || risk >= 3.1) {
+    if (paranoiaValue >= 18 || anxiousValue >= 18 || activationGap >= 24 || risk >= 3.1) {
       riskLabel = 'High';
       riskClass = 'tag--high';
       riskMessage = 'Activation or volatility risk is higher here.';
@@ -403,7 +400,7 @@
       if (risk >= 3.1) {
         reasons.push('The negative load is high enough to push the band upward.');
       }
-    } else if (negatives.paranoia >= 10 || negatives.anxious >= 10 || activationGap >= 12 || risk >= 1.5) {
+    } else if (paranoiaValue >= 10 || anxiousValue >= 10 || activationGap >= 12 || risk >= 1.5) {
       riskLabel = 'Moderate';
       riskClass = 'tag--mod';
       riskMessage = 'Tradeoff visible; stay cautious.';
