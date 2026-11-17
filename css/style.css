@@ -1459,3 +1459,9 @@ table.results-table {
 .example-card__name { font-weight: 600; color: var(--accent-strong); }
 .example-card__story { font-size: .9rem; color: var(--muted); }
 .example-card__caution { font-size: .8rem; color: var(--muted-strong); border-top: 1px solid rgba(255,255,255,.08); padding-top: .4rem; }
+
+.evidence-note { font-size: .85rem; color: var(--muted-strong); border-top: 1px solid rgba(255,255,255,.08); padding-top: .5rem; margin-top: .5rem; }
+.evidence-note a, .evidence-panel a { color: var(--accent-strong); }
+.evidence-panel { margin: 0 0 1.5rem; padding: 1.25rem; }
+.evidence-panel li { margin: .35rem 0; }
+

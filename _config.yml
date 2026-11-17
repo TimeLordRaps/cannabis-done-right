@@ -12,3 +12,4 @@ highlighter: rouge
   - condition_profiles.py
   - package.json
   - README.md
+  - pipeline
