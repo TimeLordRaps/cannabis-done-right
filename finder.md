@@ -76,6 +76,19 @@ nav: finder
     </label>
   </div>
 
+  <div id="example-profiles" class="example-profiles">
+    <p class="warning-band__label">Example profiles</p>
+    <p class="subtle">Fictional personas that pre-select a condition combination so you can see how the lens changes. They are not you, and not advice. Pick one, then edit the boxes.</p>
+    <div class="example-profiles__grid">
+      {% for p in site.data.example_profiles %}
+      <button type="button" class="example-card" data-preset="{{ p.conditions | join: ',' }}" disabled>
+        <span class="example-card__name">{{ p.name }}</span>
+        <span class="example-card__story">{{ p.story }}</span>
+        <span class="example-card__caution">{{ p.caution }}</span>
+      </button>
+      {% endfor %}
+    </div>
+  </div>
   <form id="condition-form" class="finder-form" data-gated>
     <fieldset class="finder-group">
       <legend class="finder-group__title">Mood stability</legend>
@@ -135,16 +148,41 @@ nav: finder
   </div>
 </section>
 
-<script>window.__STRAIN_DATA__ = {{ site.data.strains_all | jsonify }};</script>
-<script src="{{ '/js/strains.js' | relative_url }}"></script>
-<script src="{{ '/js/ranker.js' | relative_url }}"></script>
+<script>
+(() => {
+  const load = src => new Promise((ok, fail) => {
+    const s = document.createElement('script');
+    s.src = src; s.onload = ok; s.onerror = () => fail(new Error('Failed to load ' + src));
+    document.head.appendChild(s);
+  });
+  fetch("{{ '/data/strains.min.json' | relative_url }}")
+    .then(r => { if (!r.ok) throw new Error('strain data HTTP ' + r.status); return r.json(); })
+    .then(data => { window.__STRAIN_DATA__ = data; })
+    .then(() => load("{{ '/js/risk.js' | relative_url }}"))
+    .then(() => load("{{ '/js/strains.js' | relative_url }}"))
+    .then(() => load("{{ '/js/ranker.js' | relative_url }}"))
+    .catch(err => {
+      const el = document.getElementById('results');
+      if (el) el.innerHTML = '<p class="finder-empty">Could not load the strain dataset (' + String(err.message).replace(/</g, '&lt;') + '). Reload to try again.</p>';
+    });
+})();
+</script>
 <script>
 (() => {
   const gate = document.getElementById('gate-checkbox');
   const form = document.getElementById('condition-form');
   const prompt = document.getElementById('gate-prompt');
   if (!gate || !form) return;
+  const presetButtons = Array.from(document.querySelectorAll('[data-preset]'));
+  const applyPreset = btn => {
+    const wanted = btn.dataset.preset.split(',').filter(Boolean);
+    form.querySelectorAll('input[name="conditions"]').forEach(i => { i.checked = wanted.includes(i.value); });
+    presetButtons.forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+    form.dispatchEvent(new Event('change', { bubbles: true }));
+  };
+  presetButtons.forEach(btn => btn.addEventListener('click', () => applyPreset(btn)));
   gate.addEventListener('change', () => {
+    presetButtons.forEach(b => { b.disabled = !gate.checked; });
     if (gate.checked) {
       form.removeAttribute('data-gated');
       prompt.hidden = true;

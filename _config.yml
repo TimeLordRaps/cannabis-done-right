@@ -7,3 +7,8 @@ exclude:
   - Gemfile.lock
 markdown: kramdown
 highlighter: rouge
+  - test
+  - scripts
+  - condition_profiles.py
+  - package.json
+  - README.md

@@ -1448,3 +1448,14 @@ table.results-table {
 	transition: opacity 0.4s ease, filter 0.4s ease;
 }
 
+
+/* Example profiles (finder) */
+.example-profiles { margin: 0 0 1.5rem; }
+.example-profiles__grid { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); margin-top: .75rem; }
+.example-card { text-align: left; display: flex; flex-direction: column; gap: .4rem; padding: .9rem 1rem; border-radius: 12px; border: 1px solid rgba(255,255,255,.1); background: var(--surface-soft); color: var(--text); font: inherit; cursor: pointer; }
+.example-card:hover:not(:disabled), .example-card:focus-visible { border-color: var(--accent); }
+.example-card[aria-pressed="true"] { border-color: var(--accent); background: rgba(136,170,147,.12); }
+.example-card:disabled { opacity: .5; cursor: not-allowed; }
+.example-card__name { font-weight: 600; color: var(--accent-strong); }
+.example-card__story { font-size: .9rem; color: var(--muted); }
+.example-card__caution { font-size: .8rem; color: var(--muted-strong); border-top: 1px solid rgba(255,255,255,.08); padding-top: .4rem; }
