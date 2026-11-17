@@ -335,7 +335,6 @@
       {
         'logtags-relaxed': 1.4,
         'logtags-sleepy': 1.0,
-        'logtags-pain': 0.9,
         'logtags-focused': 0.4
       },
       {
