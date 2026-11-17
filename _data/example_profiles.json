@@ -1,0 +1,51 @@
+[
+  {
+    "id": "anxious-professional",
+    "name": "The anxious professional",
+    "story": "Wired by day, ruminating at night. Wants calm without losing the next morning.",
+    "conditions": ["gad", "social_anx"],
+    "caution": "Anxiety is the group most sensitive to paranoia tags. Read the risk reasons before the fit score."
+  },
+  {
+    "id": "trauma-broken-sleep",
+    "name": "Trauma and broken sleep",
+    "story": "Hypervigilant, light sleeper, startles easily. Looking for settling rather than stimulation.",
+    "conditions": ["ptsd", "panic"],
+    "caution": "Panic can be triggered by strong activation. Anything labelled High risk is a reason to skip, not to dose lower."
+  },
+  {
+    "id": "winter-low",
+    "name": "Winter low mood",
+    "story": "Energy and motivation drop every autumn. Wants lift without a crash or a racing evening.",
+    "conditions": ["sad_seasonal", "mdd"],
+    "caution": "Persistent low mood deserves clinical support. Light, sleep and movement usually outrank any strain."
+  },
+  {
+    "id": "mood-swing-caution",
+    "name": "Mood-swing caution",
+    "story": "Bipolar II or cyclothymic pattern. Highs and lows are the main concern, so stimulation is the main risk.",
+    "conditions": ["bp2", "cyclo"],
+    "caution": "Cannabis can precipitate hypomania or mania and worsen mood cycling. Talk to your prescriber first. Treat this lens as a way to see what to avoid."
+  },
+  {
+    "id": "cycle-linked",
+    "name": "Cycle-linked mood",
+    "story": "Irritability, tension and anxiety in the premenstrual window.",
+    "conditions": ["pmdd", "gad"],
+    "caution": "Track timing. If the pattern is severe, PMDD has effective medical treatments."
+  },
+  {
+    "id": "cutting-back",
+    "name": "Cutting back, compulsion-prone",
+    "story": "Already notices a pull toward repeat use, like gaming or scrolling. Wants to see what a conservative lens looks like.",
+    "conditions": ["gaming_add", "porn_add"],
+    "caution": "If you are trying to quit, the reset section on the home page comes first. Not using is a valid result."
+  },
+  {
+    "id": "baseline-only",
+    "name": "No condition, just curious",
+    "story": "No diagnosis in play. Wants the plain low-volatility view.",
+    "conditions": [],
+    "caution": "With nothing selected the finder uses the baseline lens."
+  }
+]
