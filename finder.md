@@ -19,7 +19,7 @@ nav: finder
 
 {% include autonomy-cue.html eyebrow="Autonomy cue" title="Treat the result as a checkpoint, not a command" text="Risk bands stay visible, reasons stay explicit, and nothing on the page is trying to force a yes. The design is here to help you read more slowly, not to talk you into a faster answer." points="Fewer conditions usually means a cleaner, less biased read.|If you are altered or anxious, rerun later instead of deciding now.|A high-risk label is an invitation to slow down." %}
 
-<section class="panel panel--soft reveal" data-reveal>
+<section id="risk-rubric" class="panel panel--soft reveal" data-reveal>
   <div class="section-head">
     <p class="eyebrow">Risk rubric</p>
     <h2>What moves a strain into each band</h2>
@@ -159,6 +159,7 @@ nav: finder
     .then(r => { if (!r.ok) throw new Error('strain data HTTP ' + r.status); return r.json(); })
     .then(data => { window.__STRAIN_DATA__ = data; })
     .then(() => load("{{ '/js/risk.js' | relative_url }}"))
+    .then(() => load("{{ '/js/fit.js' | relative_url }}"))
     .then(() => load("{{ '/js/strains.js' | relative_url }}"))
     .then(() => load("{{ '/js/ranker.js' | relative_url }}"))
     .catch(err => {

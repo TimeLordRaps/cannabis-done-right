@@ -2,6 +2,7 @@
 
 A static harm-reduction / decision-support site (Jekyll on GitHub Pages). Educational only, not medical advice.
 
+- **Risk Check** (quiz.md): a 2-minute, risk-first quiz (situation, safety screen, three cited risk checks) whose reward is a conservative strain match. Hard stops (pregnancy, bipolar/psychosis history, under legal age, unanswered safety items) show no strain; driving soon defers; elevated-caution answers restrict matches to the lowest-risk pool. Nothing is saved or sent.
 - **Strain Finder** (`finder.md`): ranks ~2,100 strains against selected conditions with a conservative risk penalty. Includes fictional **example profiles** that pre-select condition combinations.
 - **Strain Breeder** (`breeder.md`): concept simulator.
 - **Myths** (`myths.md`) and a quit-first reset on the home page.

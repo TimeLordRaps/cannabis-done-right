@@ -13,7 +13,8 @@ nav: home
     <p class="hero__subtle">Educational only. Not medical advice. Not an endorsement. Built to keep risk visible while you decide what deserves your attention.</p>
 
     <div class="cta-row">
-      <a class="button button--primary" href="#tools">Explore tools</a>
+      <a class="button button--primary" href="{{ '/quiz' | relative_url }}">Take the 2-minute risk check</a>
+      <a class="button button--ghost" href="#tools">Explore tools</a>
       <a class="button button--ghost" href="#reset">Start with risks / quitting</a>
     </div>
 

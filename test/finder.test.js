@@ -18,7 +18,7 @@ function boot(selected) {
   const document = { getElementById: id => (id === 'condition-form' ? form : id === 'results' ? results : null) };
   const window = { __STRAIN_DATA__: JSON.parse(read('data/strains.min.json')) };
   const ctx = vm.createContext({ window, document, console });
-  ['js/risk.js', 'js/strains.js', 'js/ranker.js'].forEach(f => vm.runInContext(read(f), ctx, { filename: f }));
+  ['js/risk.js', 'js/fit.js', 'js/strains.js', 'js/ranker.js'].forEach(f => vm.runInContext(read(f), ctx, { filename: f }));
   return { window, results };
 }
 

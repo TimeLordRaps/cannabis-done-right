@@ -9,6 +9,7 @@
 
   <div class="nav-links">
     <a class="nav-link{% if page.nav == 'home' %} is-active{% endif %}" href="{{ '/' | relative_url }}" {% if page.nav == 'home' %}aria-current="page"{% endif %}>Home</a>
+    <a class="nav-link{% if page.nav == 'quiz' %} is-active{% endif %}" href="{{ '/quiz' | relative_url }}" {% if page.nav == 'quiz' %}aria-current="page"{% endif %}>Risk Check</a>
     <a class="nav-link{% if page.nav == 'finder' %} is-active{% endif %}" href="{{ '/finder' | relative_url }}" {% if page.nav == 'finder' %}aria-current="page"{% endif %}>Strain Finder</a>
     <a class="nav-link{% if page.nav == 'breeder' %} is-active{% endif %}" href="{{ '/breeder' | relative_url }}" {% if page.nav == 'breeder' %}aria-current="page"{% endif %}>Strain Breeder</a>
     <a class="nav-link{% if page.nav == 'myths' %} is-active{% endif %}" href="{{ '/myths' | relative_url }}" {% if page.nav == 'myths' %}aria-current="page"{% endif %}>Myths &amp; Risks</a>
