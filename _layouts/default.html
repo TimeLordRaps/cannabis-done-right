@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="dark" data-region-gate="pending">
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }} | Cannabis Done Right</title>
@@ -7,8 +7,12 @@
   <meta name="color-scheme" content="dark light">
   <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◈</text></svg>">
+  <script>window.regionGate = new Promise(function (resolve) { window.__releaseRegionGate = resolve; });</script>
 </head>
 <body>
+  <div id="region-gate" class="region-gate" aria-live="polite">
+    <noscript><section class="panel region-card"><h1>JavaScript is required</h1><p>This site checks your region and age before showing content, so it can't be shown without JavaScript.</p></section></noscript>
+  </div>
   <a class="skip-link" href="#content">Skip to content</a>
   <div class="site-frame">
     <header class="site-header">
@@ -29,6 +33,9 @@
     </footer>
   </div>
 
+  <script>window.__JURISDICTIONS__ = {{ site.data.jurisdictions | jsonify }};</script>
+  <script src="{{ '/js/region.js' | relative_url }}"></script>
+  <script src="{{ '/js/gate.js' | relative_url }}"></script>
   <script src="{{ '/js/site.js' | relative_url }}"></script>
 </body>
 </html>

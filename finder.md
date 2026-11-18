@@ -155,7 +155,8 @@ nav: finder
     s.src = src; s.onload = ok; s.onerror = () => fail(new Error('Failed to load ' + src));
     document.head.appendChild(s);
   });
-  fetch("{{ '/data/strains.min.json' | relative_url }}")
+  (window.regionGate || Promise.resolve())
+    .then(() => fetch("{{ '/data/strains.min.json' | relative_url }}"))
     .then(r => { if (!r.ok) throw new Error('strain data HTTP ' + r.status); return r.json(); })
     .then(data => { window.__STRAIN_DATA__ = data; })
     .then(() => load("{{ '/js/risk.js' | relative_url }}"))

@@ -16,8 +16,8 @@
   // effect: hardStop -> no strain is shown. defer -> no strain is shown right now.
   // elevated -> strains are shown only from the lowest-risk pool. `unsure` is how "Not sure" counts.
   const SAFETY = [
-    { id: 'age', q: 'Are you of legal age to use cannabis where you live?', yesIs: 'ok', noEffect: 'hardStop', unsure: 'hardStop',
-      why: 'The match is not shown if you are under legal age.' },
+    { id: 'age', q: 'Are you over the legal age of majority to consume cannabis where you live, or do you have medical authorization or support for use?', yesIs: 'ok', noEffect: 'hardStop', unsure: 'hardStop',
+      why: 'No match is shown unless you are of legal age or have medical authorization or support for use.' },
     { id: 'pregnancy', q: 'Are you pregnant, trying to conceive, or breastfeeding?', effect: 'hardStop', unsure: 'hardStop',
       why: 'Cannabis use in pregnancy and breastfeeding is something to discuss with your clinician first.' },
     { id: 'personal-mania', q: 'Have you ever been diagnosed with bipolar disorder, mania, or a psychotic disorder?', effect: 'hardStop', unsure: 'elevated',

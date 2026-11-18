@@ -1,0 +1,119 @@
+[
+  {
+    "code": "CA-AB",
+    "group": "Canada",
+    "name": "Alberta",
+    "status": "allowed",
+    "minAge": 18,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-BC",
+    "group": "Canada",
+    "name": "British Columbia",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-MB",
+    "group": "Canada",
+    "name": "Manitoba",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-NB",
+    "group": "Canada",
+    "name": "New Brunswick",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-NL",
+    "group": "Canada",
+    "name": "Newfoundland and Labrador",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-NS",
+    "group": "Canada",
+    "name": "Nova Scotia",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-NT",
+    "group": "Canada",
+    "name": "Northwest Territories",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-NU",
+    "group": "Canada",
+    "name": "Nunavut",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-ON",
+    "group": "Canada",
+    "name": "Ontario",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-PE",
+    "group": "Canada",
+    "name": "Prince Edward Island",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-QC",
+    "group": "Canada",
+    "name": "Quebec",
+    "status": "allowed",
+    "minAge": 21,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-SK",
+    "group": "Canada",
+    "name": "Saskatchewan",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "CA-YT",
+    "group": "Canada",
+    "name": "Yukon",
+    "status": "allowed",
+    "minAge": 19,
+    "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
+    "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  }
+]
