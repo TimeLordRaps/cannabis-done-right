@@ -14,7 +14,8 @@ test('jurisdiction data: unique codes; allowed entries carry age, source and ver
   for (const j of J) {
     assert.ok(['allowed', 'blocked'].includes(j.status), j.code);
     if (j.status === 'allowed') {
-      assert.ok(Number.isInteger(j.minAge) && j.minAge >= 18 && j.minAge <= 21, `${j.code} minAge`);
+      if (j.group === 'Canada' || (j.group === 'United States' && j.use === 'adult-use')) assert.ok(Number.isInteger(j.minAge) && j.minAge >= 18 && j.minAge <= 21, `${j.code} minAge`);
+      else assert.ok(j.minAge == null || (Number.isInteger(j.minAge) && j.minAge >= 18), `${j.code} minAge`);
       assert.ok(/^https:\/\//.test(j.source), `${j.code} source`);
       assert.ok(j.verified && j.verified.length > 10, `${j.code} verified`);
     }
@@ -126,4 +127,35 @@ test('layout wiring is fail-closed and data loaders wait for the gate', () => {
   assert.match(read('css/style.css'), /data-region-gate="pending"\] \.site-frame/);
   assert.match(read('finder.md'), /window\.regionGate/);
   assert.match(read('quiz.md'), /window\.regionGate/);
+});
+
+test('world list invariants: complete US, sane groups, provenance on every allowed entry', () => {
+  const us = J.filter(j => j.group === 'United States');
+  assert.strictEqual(us.length, 51, '50 states + DC');
+  assert.ok(us.some(j => j.name === 'District of Columbia'));
+  const adult = us.filter(j => j.use === 'adult-use');
+  assert.ok(adult.length >= 20);
+  assert.ok(adult.every(j => j.status === 'allowed' && j.minAge === 21), 'US adult-use is 21');
+  assert.ok(us.filter(j => j.status === 'blocked').every(j => j.use === 'none' && j.minAge == null));
+  const others = J.filter(j => j.group === 'Other countries');
+  assert.ok(others.length > 30);
+  assert.ok(others.every(j => j.status === 'allowed' && ['adult-use', 'medical'].includes(j.use)));
+  assert.ok(!others.some(j => ['Canada', 'United States'].includes(j.name)), 'handled by subnational entries');
+  assert.ok(J.filter(j => j.status === 'allowed').every(j => j.use || j.group === 'Canada'));
+  assert.ok(J.every(j => j.verified && /secondary|official/.test(j.verified)), 'every entry states how it was verified');
+});
+
+test('a blocked US state from the data is blocked and never opens, even with yes', () => {
+  const blocked = J.find(j => j.group === 'United States' && j.status === 'blocked');
+  assert.ok(blocked);
+  assert.strictEqual(logic.decide(J, blocked.code, 'yes').reason, 'region-blocked');
+});
+
+test('medical-only places get the generic age + medical-authorization question', () => {
+  const med = J.find(j => j.use === 'medical');
+  assert.ok(med);
+  assert.match(logic.ageQuestion(med), /legal age of majority/);
+  assert.match(logic.ageQuestion(med), /medical authorization or support/);
+  const adult = J.find(j => j.group === 'United States' && j.use === 'adult-use');
+  assert.match(logic.ageQuestion(adult), /21 or older/);
 });

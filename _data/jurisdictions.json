@@ -115,5 +115,1065 @@
     "minAge": 19,
     "source": "https://www.canada.ca/en/health-canada/services/drugs-medication/cannabis/laws-regulations/provincial-territorial-government-cannabis-legislation.html",
     "verified": "secondary: canadavisa.com via search summary, 2026-11-18; official page not reachable from the build machine. Recheck before relying on it."
+  },
+  {
+    "code": "US-ALABAMA",
+    "group": "United States",
+    "name": "Alabama",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-ALASKA",
+    "group": "United States",
+    "name": "Alaska",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-ARIZONA",
+    "group": "United States",
+    "name": "Arizona",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-ARKANSAS",
+    "group": "United States",
+    "name": "Arkansas",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-CALIFORNIA",
+    "group": "United States",
+    "name": "California",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-COLORADO",
+    "group": "United States",
+    "name": "Colorado",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-CONNECTICUT",
+    "group": "United States",
+    "name": "Connecticut",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-DELAWARE",
+    "group": "United States",
+    "name": "Delaware",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-FLORIDA",
+    "group": "United States",
+    "name": "Florida",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-GEORGIA",
+    "group": "United States",
+    "name": "Georgia",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-HAWAII",
+    "group": "United States",
+    "name": "Hawaii",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-IDAHO",
+    "group": "United States",
+    "name": "Idaho",
+    "status": "blocked",
+    "use": "none",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-ILLINOIS",
+    "group": "United States",
+    "name": "Illinois",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-INDIANA",
+    "group": "United States",
+    "name": "Indiana",
+    "status": "blocked",
+    "use": "none",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-IOWA",
+    "group": "United States",
+    "name": "Iowa",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-KANSAS",
+    "group": "United States",
+    "name": "Kansas",
+    "status": "blocked",
+    "use": "none",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-KENTUCKY",
+    "group": "United States",
+    "name": "Kentucky",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-LOUISIANA",
+    "group": "United States",
+    "name": "Louisiana",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-MAINE",
+    "group": "United States",
+    "name": "Maine",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-MARYLAND",
+    "group": "United States",
+    "name": "Maryland",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-MASSACHUSETT",
+    "group": "United States",
+    "name": "Massachusetts",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-MICHIGAN",
+    "group": "United States",
+    "name": "Michigan",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-MINNESOTA",
+    "group": "United States",
+    "name": "Minnesota",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-MISSISSIPPI",
+    "group": "United States",
+    "name": "Mississippi",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-MISSOURI",
+    "group": "United States",
+    "name": "Missouri",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-MONTANA",
+    "group": "United States",
+    "name": "Montana",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-NEBRASKA",
+    "group": "United States",
+    "name": "Nebraska",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-NEVADA",
+    "group": "United States",
+    "name": "Nevada",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-NEWHAMPSHIRE",
+    "group": "United States",
+    "name": "New Hampshire",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-NEWJERSEY",
+    "group": "United States",
+    "name": "New Jersey",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-NEWMEXICO",
+    "group": "United States",
+    "name": "New Mexico",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-NEWYORK",
+    "group": "United States",
+    "name": "New York",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-NORTHCAROLIN",
+    "group": "United States",
+    "name": "North Carolina",
+    "status": "blocked",
+    "use": "none",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-NORTHDAKOTA",
+    "group": "United States",
+    "name": "North Dakota",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-OHIO",
+    "group": "United States",
+    "name": "Ohio",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-OKLAHOMA",
+    "group": "United States",
+    "name": "Oklahoma",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-OREGON",
+    "group": "United States",
+    "name": "Oregon",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-PENNSYLVANIA",
+    "group": "United States",
+    "name": "Pennsylvania",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-RHODEISLAND",
+    "group": "United States",
+    "name": "Rhode Island",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-SOUTHCAROLIN",
+    "group": "United States",
+    "name": "South Carolina",
+    "status": "blocked",
+    "use": "none",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-SOUTHDAKOTA",
+    "group": "United States",
+    "name": "South Dakota",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-TENNESSEE",
+    "group": "United States",
+    "name": "Tennessee",
+    "status": "blocked",
+    "use": "none",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-TEXAS",
+    "group": "United States",
+    "name": "Texas",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-UTAH",
+    "group": "United States",
+    "name": "Utah",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-VERMONT",
+    "group": "United States",
+    "name": "Vermont",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-VIRGINIA",
+    "group": "United States",
+    "name": "Virginia",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-WASHINGTON",
+    "group": "United States",
+    "name": "Washington",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-WESTVIRGINIA",
+    "group": "United States",
+    "name": "West Virginia",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-WISCONSIN",
+    "group": "United States",
+    "name": "Wisconsin",
+    "status": "blocked",
+    "use": "none",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-WYOMING",
+    "group": "United States",
+    "name": "Wyoming",
+    "status": "blocked",
+    "use": "none",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis_by_U.S._jurisdiction&oldid=1382492070",
+    "verified": "secondary: Wikipedia revision 1382492070, retrieved 2026-11-18; adult-use count (24) matches the NCSL summary. Official state law not checked."
+  },
+  {
+    "code": "US-DC",
+    "group": "United States",
+    "name": "District of Columbia",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": 21,
+    "source": "https://www.ncsl.org/health/state-medical-cannabis-laws",
+    "verified": "secondary: listed as an adult-use jurisdiction in an NCSL summary found by web search, 2026-11-18. Not in the Wikipedia state table. Official law not checked."
+  },
+  {
+    "code": "WORLD-ALBANIA",
+    "group": "Other countries",
+    "name": "Albania",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-ARGENTINA",
+    "group": "Other countries",
+    "name": "Argentina",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-AUSTRALIA",
+    "group": "Other countries",
+    "name": "Australia",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-BARBADOS",
+    "group": "Other countries",
+    "name": "Barbados",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-BERMUDA",
+    "group": "Other countries",
+    "name": "Bermuda",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-BOSNIAANDHERZE",
+    "group": "Other countries",
+    "name": "Bosnia and Herzegovina",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-BOTSWANA",
+    "group": "Other countries",
+    "name": "Botswana",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-BRAZIL",
+    "group": "Other countries",
+    "name": "Brazil",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-CHANNELISLANDS",
+    "group": "Other countries",
+    "name": "Channel Islands",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=yes, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-CHILE",
+    "group": "Other countries",
+    "name": "Chile",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-COLOMBIA",
+    "group": "Other countries",
+    "name": "Colombia",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-COOKISLANDS",
+    "group": "Other countries",
+    "name": "Cook Islands",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-COSTARICA",
+    "group": "Other countries",
+    "name": "Costa Rica",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-CROATIA",
+    "group": "Other countries",
+    "name": "Croatia",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-CYPRUS",
+    "group": "Other countries",
+    "name": "Cyprus",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-CZECHREPUBLIC",
+    "group": "Other countries",
+    "name": "Czech Republic",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=yes, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-DENMARK",
+    "group": "Other countries",
+    "name": "Denmark",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-ECUADOR",
+    "group": "Other countries",
+    "name": "Ecuador",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-FINLAND",
+    "group": "Other countries",
+    "name": "Finland",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-GERMANY",
+    "group": "Other countries",
+    "name": "Germany",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=yes, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-GREECE",
+    "group": "Other countries",
+    "name": "Greece",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-IRELAND",
+    "group": "Other countries",
+    "name": "Ireland",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-ISRAEL",
+    "group": "Other countries",
+    "name": "Israel",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-ITALY",
+    "group": "Other countries",
+    "name": "Italy",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-JAMAICA",
+    "group": "Other countries",
+    "name": "Jamaica",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-LEBANON",
+    "group": "Other countries",
+    "name": "Lebanon",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-LUXEMBOURG",
+    "group": "Other countries",
+    "name": "Luxembourg",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=yes, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-MALAWI",
+    "group": "Other countries",
+    "name": "Malawi",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-MALTA",
+    "group": "Other countries",
+    "name": "Malta",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=yes, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-MEXICO",
+    "group": "Other countries",
+    "name": "Mexico",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=yes, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-MOROCCO",
+    "group": "Other countries",
+    "name": "Morocco",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-NETHERLANDS",
+    "group": "Other countries",
+    "name": "Netherlands",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-NEWZEALAND",
+    "group": "Other countries",
+    "name": "New Zealand",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-NORTHMACEDONIA",
+    "group": "Other countries",
+    "name": "North Macedonia",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-NORWAY",
+    "group": "Other countries",
+    "name": "Norway",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-PANAMA",
+    "group": "Other countries",
+    "name": "Panama",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-PERU",
+    "group": "Other countries",
+    "name": "Peru",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-POLAND",
+    "group": "Other countries",
+    "name": "Poland",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-PORTUGAL",
+    "group": "Other countries",
+    "name": "Portugal",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-RWANDA",
+    "group": "Other countries",
+    "name": "Rwanda",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-SAINTVINCENTAN",
+    "group": "Other countries",
+    "name": "Saint Vincent and the Grenadines",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-SANMARINO",
+    "group": "Other countries",
+    "name": "San Marino",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-SLOVENIA",
+    "group": "Other countries",
+    "name": "Slovenia",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-SOUTHAFRICA",
+    "group": "Other countries",
+    "name": "South Africa",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=yes, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-SPAIN",
+    "group": "Other countries",
+    "name": "Spain",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-SRILANKA",
+    "group": "Other countries",
+    "name": "Sri Lanka",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-SWEDEN",
+    "group": "Other countries",
+    "name": "Sweden",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-SWITZERLAND",
+    "group": "Other countries",
+    "name": "Switzerland",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-THAILAND",
+    "group": "Other countries",
+    "name": "Thailand",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-UKRAINE",
+    "group": "Other countries",
+    "name": "Ukraine",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-UNITEDKINGDOM",
+    "group": "Other countries",
+    "name": "United Kingdom",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=partial, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-URUGUAY",
+    "group": "Other countries",
+    "name": "Uruguay",
+    "status": "allowed",
+    "use": "adult-use",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=yes, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-VANUATU",
+    "group": "Other countries",
+    "name": "Vanuatu",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-ZAMBIA",
+    "group": "Other countries",
+    "name": "Zambia",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
+  },
+  {
+    "code": "WORLD-ZIMBABWE",
+    "group": "Other countries",
+    "name": "Zimbabwe",
+    "status": "allowed",
+    "use": "medical",
+    "minAge": null,
+    "source": "https://en.wikipedia.org/w/index.php?title=Legality_of_cannabis&oldid=1378590397",
+    "verified": "secondary: Wikipedia revision 1378590397, retrieved 2026-11-18. Table says recreational=no, medical=yes. Official law not checked."
   }
 ]

@@ -33,7 +33,7 @@
     </footer>
   </div>
 
-  <script>window.__JURISDICTIONS__ = {{ site.data.jurisdictions | jsonify }};</script>
+  <script>window.__JURISDICTIONS__ = [{% for j in site.data.jurisdictions %}{"code":{{ j.code | jsonify }},"group":{{ j.group | jsonify }},"name":{{ j.name | jsonify }},"status":{{ j.status | jsonify }},"minAge":{% if j.minAge %}{{ j.minAge }}{% else %}null{% endif %}}{% unless forloop.last %},{% endunless %}{% endfor %}];</script>
   <script src="{{ '/js/region.js' | relative_url }}"></script>
   <script src="{{ '/js/gate.js' | relative_url }}"></script>
   <script src="{{ '/js/site.js' | relative_url }}"></script>
