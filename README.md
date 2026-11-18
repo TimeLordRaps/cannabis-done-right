@@ -34,6 +34,12 @@ GitHub Actions workflow `pages.yml`. In the repo settings, Pages → Source must
 
 See [pipeline/README.md](pipeline/README.md). In short: the earlier claim of a validated, provably optimal MaxSAT ranking is not supported by any code in this repo; the finder uses weighted scoring in JS.
 
+## Region and age gate
+
+Every page is hidden until the visitor picks a region and answers the age question (legal age for that region, or medical authorization/support). Rules live in `_data/jurisdictions.json`: a region is shown content only if its `status` is `allowed`; anything else, including "Somewhere else", is blocked. To add a place, add an entry with `minAge`, an official `source` and a `verified` note. Currently only the 13 Canadian provinces and territories are enabled (Alberta 18, Quebec 21, others 19; recheck, since the official page was unreachable when this was written).
+
+Limits, stated plainly: the region is self-declared (no IP lookup, so nothing is sent to a third party), the gate is client-side and can be bypassed, and the page source and data files are still public. It is a good-faith compliance control, not legal enforcement. Hard enforcement would need server or CDN geo-blocking (for example a Cloudflare rule). Whether this site's content is lawful in a given province, including under Cannabis Act promotion rules, is a question for a lawyer.
+
 ## Known limits
 
 - Risk bands in `js/risk.js` are relative to this dataset (cutoffs anchored to percentiles; see `node scripts/calibrate_risk.js`), not clinical cutoffs.

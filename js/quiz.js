@@ -8,6 +8,9 @@
     .replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;').replaceAll("'", '&#39;');
   const base = root.dataset.base || '';
+  const questionText = item => (item.id === 'age' && window.regionGateLogic && window.regionJurisdiction)
+    ? window.regionGateLogic.ageQuestion(window.regionJurisdiction)
+    : item.q;
 
   // steps: intro, reason, safety x N, check x M, result
   const steps = [{ type: 'intro' }, { type: 'reason' }]
@@ -52,7 +55,7 @@
       const a = answers.safety[step.item.id];
       const btn = (val, label) => `<button type="button" class="quiz-option${a === val ? ' is-picked' : ''}" data-act="safety" data-id="${esc(step.item.id)}" data-val="${val}">${label}</button>`;
       return `${progress()}
-      <fieldset class="quiz-fieldset"><legend class="quiz-q">${esc(step.item.q)}</legend>
+      <fieldset class="quiz-fieldset"><legend class="quiz-q">${esc(questionText(step.item))}</legend>
         <p class="subtle quiz-why"><strong>Why we ask:</strong> ${esc(step.item.why)}</p>
         <div class="quiz-options quiz-options--row">${btn('yes', 'Yes')}${btn('no', 'No')}${btn('unsure', 'Not sure')}</div>
       </fieldset>${backButton()}`;

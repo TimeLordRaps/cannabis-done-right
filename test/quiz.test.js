@@ -149,3 +149,19 @@ test('site wiring: nav, CTA, quiz page and finder anchor exist', () => {
   assert.match(read('quiz.md'), /quiz\.js/);
   assert.match(read('finder.md'), /id="risk-rubric"/);
 });
+
+test('UI: the age question is region-aware and mentions medical authorization', () => {
+  const handlers = {};
+  const root = { dataset: { base: '' }, innerHTML: '', addEventListener: (e, f) => { handlers[e] = f; }, querySelector: () => null };
+  const window = Object.assign({}, W);
+  const J = JSON.parse(read('_data/jurisdictions.json'));
+  const ctx = vm.createContext({ window, document: { getElementById: id => (id === 'quiz-root' ? root : null) } });
+  ['js/risk.js', 'js/fit.js', 'js/strains.js', 'js/region.js', 'js/quizlogic.js'].forEach(f => vm.runInContext(read(f), ctx));
+  window.regionJurisdiction = J.find(j => j.code === 'CA-AB');
+  vm.runInContext(read('js/quiz.js'), ctx);
+  const click = (act, data = {}) => handlers.click({ target: { closest: () => ({ dataset: { act, ...data }, disabled: false }) } });
+  click('start'); click('reason', { id: 'anxious' });
+  assert.match(root.innerHTML, /18 or older/);
+  assert.match(root.innerHTML, /Alberta/);
+  assert.match(root.innerHTML, /medical authorization or support/);
+});
